@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.2.0] - 2020-06-26
+### Added
+- Writer note
+- Character history
+- Plot scenes
+
 ## [0.1.0] - 2020-06-25
 ### Added
 - Plan
@@ -16,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
 - README one line implemented.
 
-[Unreleased]: https://github.com/My-Novel-Management/mcon127-novel/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/My-Novel-Management/mcon127-novel/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/My-Novel-Management/mcon127-novel/releases/v0.2.0
 [0.1.0]: https://github.com/My-Novel-Management/mcon127-novel/releases/v0.1.0
 [0.0.1]: https://github.com/My-Novel-Management/mcon127-novel/releases/v0.0.1
