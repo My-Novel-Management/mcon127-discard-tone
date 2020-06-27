@@ -12,6 +12,7 @@ from storybuilder.assets import basic
 from config import ASSET
 # import scenes
 from scenes import Apart
+from scenes import Bar
 from scenes import Home
 from scenes import Manshion
 from scenes import School
@@ -45,7 +46,8 @@ def ep_runaway(w: World):
             Station.free_piano(w),
             w.plot_note("小さい頃からピアノだけが友人だった$makiは、周囲とは馴染めず、心と耳を閉ざしていく","徐々に学校をサボるようになった"),
             w.plot_note("学校を抜け出していつも遊びに行ったピアノを自宅に持っている元音大生の$yayoiが、ある時結婚してしまい、$makiは行き場を失った"),
-            Apart.her_marriage(w),
+            Apart.her_marriage(w).omit(),
+            Bar.her_everyday(w),
             Station.vanish_piano(w),
             )
 
@@ -83,6 +85,7 @@ def ep_mainstage(w: World):
             Station.expand_piano(w),
             w.plot_note("$makiはピアノを弾く", "何も聞こえないはずの彼女に、雨の音がした", "それは観衆の拍手の雨だった"),
             Station.clap_rain(w),
+            w.symbol("（了）"),
             )
 
 # TODO: あとで人物履歴に修正すること。今回は間に合わないのでエピソードで作ってomitします
