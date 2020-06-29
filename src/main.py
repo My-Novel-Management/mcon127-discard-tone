@@ -31,7 +31,7 @@ from scenes import Street
 ################################################################
 
 # Constant
-TITLE = "音を捨てた彼女"
+TITLE = "音を捨てた少女"
 OUTLINE = "家族や同級生の声から耳を閉ざしたピアノだけが友人の少女は、男に拾われる。男もまた失った人だった。恩人の男に恩返しをするため、少女はピアノを弾くステージに立つ"
 
 
@@ -58,8 +58,8 @@ def ep_catchup(w: World):
             w.plot_note("パパ活でもして寝床を探そうとしたがうまくいかず、自暴自棄になっていた$makiを拾った男$sakaiは、全てを失った元作曲家だった"),
             Manshion.he_is_composer(w),
             w.plot_note("難聴だという$sakaiは$makiに自由にピアノを弾かせてくれた"),
-            Manshion.alms_giving(w),
-            Manshion.lostman(w),
+            Manshion.alms_giving(w).omit(),
+            Manshion.lostman(w).omit(),
             w.plot_note("突発性難聴の原因はよく分かっていないが、血流との関係が問題視されている等と教わる"),
             "脳梗塞を十年後に起こす可能性が高いらしい＞突発性難聴",
             w.plot_note("「このままペットみたいにあなたが飼ってくれたらいいのに」と言い出す$makiは、それでも$sakaiといつか家に帰る約束をさせられた"),
@@ -70,7 +70,7 @@ def ep_getback(w: World):
             "なぜ彼女は彼の為にその楽譜を弾くのか？",
             w.plot_note("彼の為に一度は捨てた音を取り戻し、$makiはピアノの練習をする"),
             "また逃げ出そうとする$maki",
-            School.dispising(w),
+            School.dispising(w).omit(),
             w.plot_note("彼は脳梗塞で亡くなってしまった"),
             Manshion.falldown(w),
             w.plot_note("家族に引き取られ、$makiは$sakaiに誘拐監禁されていたことになり、世間で彼は犯罪者扱いされた"),
@@ -82,7 +82,7 @@ def ep_mainstage(w: World):
             w.plot_note("彼へと捧げる彼の曲を、駅前のピアノで弾き始める$maki"),
             Station.piano_again(w),
             w.plot_note("そのピアノの音色が彼女が否定した世間から注目を集めるようになる"),
-            Station.expand_piano(w),
+            Station.expand_piano(w).omit(),
             w.plot_note("$makiはピアノを弾く", "何も聞こえないはずの彼女に、雨の音がした", "それは観衆の拍手の雨だった"),
             Station.clap_rain(w),
             w.symbol("（了）"),
